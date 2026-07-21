@@ -5,5 +5,5 @@ export default function stringTerminaCon(
   // TODO: implement
   // return string.endsWith(final);
   // return string.split('').reverse().join('').startsWith(final.split('').reverse().join(''))
-  return true
+  return new RegExp(`${final}$`).test(string);
 }
